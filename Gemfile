@@ -64,3 +64,7 @@ gem 'tzinfo-data'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'
+
+gem 'devise'
+
+gem 'figaro', '1.0'

@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+.nav-user {
+  margin-top: 10px;
+}
 
 
 
@@ -33,6 +36,5 @@
 
 
 
- 
  @import "bootstrap-sprockets";
  @import "bootstrap";
