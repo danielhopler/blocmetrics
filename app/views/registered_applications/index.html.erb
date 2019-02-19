@@ -11,7 +11,7 @@
   <div class="row app index_list">
   	<div class="col">
   		<% if current_user.registered_applications.any? %>
-  			<% @registered_applications.each do |app| %>
+  			<% current_user.registered_applications.each do |app| %>
   				<h4><%= link_to app.name, app %></h4>
   			<% end %>
   		<% else %>

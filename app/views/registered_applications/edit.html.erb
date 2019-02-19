@@ -1,2 +1,8 @@
-<h1>RegisteredApplications#edit</h1>
-<p>Find me in app/views/registered_applications/edit.html.erb</p>
+<div class="container-fluid app new">
+  <h1>Edit <%=@registered_application.name%></h1>
+  <div class="row">
+  	<div class="col-8">
+  		<%= render "form" %>
+  	</div>
+  </div>
+</div>
