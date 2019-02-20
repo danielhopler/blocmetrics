@@ -10,7 +10,7 @@ RSpec.describe RegisteredApplication, type: :model do
   it {is_expected.to validate_presence_of(:user)}
 
   describe "attributes" do
-    it "has name, body, and user attributes" do
+    it "has name, url, and user attributes" do
       expect(my_registered_application).to have_attributes(name: "New Application", url:"blocmetrics.test@example.com", user: my_user)
     end
   end

@@ -9,6 +9,7 @@ class RegisteredApplicationsController < ApplicationController
       flash[:alert] = "You are not authorized to view this app."
       redirect_to root_path
     end
+    @events = @registered_application.events.group_by(&:name)
   end
 
   def new
