@@ -1,3 +1,5 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
+
 <div class="jumbotron" >
 	<h1><%= @registered_application.name %></h1>
 	<div class="row">
@@ -28,4 +30,14 @@
 			<% end %>
 		</tbody>
 	</table>
+	<div class = "event_visual">
+			<% if @registered_application.events.count > 0 %>
+		<div class = "col-md-6">
+				<%= pie_chart @registered_application.events.group(:name).count %>
+		</div>
+		<div class = "col-md-6">
+				<%= line_chart @registered_application.events.group_by_day(:created_at, range: 2.weeks.ago.midnight..Time.now).count %>
+		</div>
+			<% end %>
+	</div>
 </div>
