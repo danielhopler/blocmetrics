@@ -1,28 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
 # Blocmetrics
 
 An analytics app that users can use with their apps to track user activity.
@@ -96,4 +71,4 @@ curl -v -H "Accept: application/json" -H "Origin: <Your Registered App Here>" -H
 ![event_graphs](app/assets/images/event_graphs.png)
 
 ##### Deployment
-* Deployed using Heroku 
+* Deployed using Heroku
