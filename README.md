@@ -11,12 +11,15 @@ An analytics app that users can use with their apps to track user activity.
 * Rails 5.2.2
 * Ruby 2.6.0
 * [Chartkick](https://github.com/ankane/chartkick#installation) - gem for creating JavaScript charts
-# [Groupdate](https://github.com/ankane/groupdate) - gem used to create line chart of events over time
+* [Groupdate](https://github.com/ankane/groupdate) - gem used to create line chart of events over time
 * Database initialization - PostgreSQL
 * Test suite - rspec-rails', '~> 3.8'
 * seed data - Faker gem
 
-##### Tracking App Events
+#### Deployment
+* Deployed using Heroku
+
+#### Tracking App Events
 Add the below Javascript snippet to the apps you want to track events in: <br/>
 
 ```
@@ -47,7 +50,7 @@ var blocmetrics = {};
 * For info on implementing Devise in your app [click here!](https://github.com/plataformatec/devise)
 
 #### Register a new app with Blocmetrics for Tracking
-![new app](app/assets/images/Screen Shot 2019-04-16 at 11.20.57 AM.png)
+![new app](app/assets/images/blocmetrics-landing.png)
 
 ![new app entry](app/assets/images/register-new-app.png)
 
@@ -69,6 +72,3 @@ curl -v -H "Accept: application/json" -H "Origin: <Your Registered App Here>" -H
 * Display in registered_application/show.html.erb
 
 ![event_graphs](app/assets/images/event_graphs.png)
-
-##### Deployment
-* Deployed using Heroku
